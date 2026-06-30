@@ -333,8 +333,10 @@ button{ font-family:inherit; cursor:pointer; }
 }
 .about-card dt:first-child{ margin-top:0; }
 .about-card dd{
-  margin:4px 0 0; font-size:15px; color:var(--ink);
+  margin:4px 0 0; font-size:15px; color:var(--ink); line-height:1.55;
 }
+.about-card dd em{ color:var(--muted); font-size:13.5px; }
+.dd-sub{ color:var(--muted); font-size:13.5px; }
 
 @media (max-width:880px){
   .about-grid{ grid-template-columns:1fr; gap:40px; }
@@ -532,6 +534,41 @@ button{ font-family:inherit; cursor:pointer; }
 
 @media (max-width:680px){
   .pub-list li{ grid-template-columns:1fr; gap:8px; padding:22px; }
+}
+
+/* =============================================================
+   HONORS & AWARDS
+============================================================= */
+.awards-list{
+  list-style:none; padding:0; margin:0;
+  display:grid; gap:18px;
+}
+.awards-list li{
+  display:grid; grid-template-columns:90px 1fr; gap:24px;
+  padding:22px 26px;
+  background:var(--card);
+  border:1px solid var(--line);
+  border-left:4px solid var(--accent);
+  border-radius:var(--radius-sm);
+  box-shadow:var(--shadow);
+  align-items:start;
+}
+.award-year{
+  font-family:'JetBrains Mono', ui-monospace, monospace;
+  font-size:22px; font-weight:700; color:var(--accent);
+  letter-spacing:.5px;
+}
+.award-body{ min-width:0; }
+.award-title{
+  margin:0 0 4px; font-size:16px; font-weight:600; color:var(--ink);
+  line-height:1.45;
+}
+.award-meta{
+  margin:0; font-size:14px; color:var(--ink-soft);
+}
+@media (max-width:640px){
+  .awards-list li{ grid-template-columns:1fr; gap:6px; padding:18px 20px; }
+  .award-year{ font-size:18px; }
 }
 
 /* =============================================================
