@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Kwang-Hun Lee · Water Resources Engineer</title>
+<meta name="description" content="Kwang-Hun Lee — Postdoctoral researcher at POSTECH Environmental Engineering. Reservoir monitoring, USV/UAV/Sentinel-2 remote sensing, and explainable AI for water resources." />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<header class="nav" id="nav">
+  <div class="nav-inner">
+    <a href="#top" class="brand">
+      <span class="brand-mark">KHL</span>
+      <span class="brand-name">Kwang-Hun Lee</span>
+    </a>
+    <nav class="nav-links">
+      <a href="#about">About</a>
+      <a href="#research">Research</a>
+      <a href="#publications">Publications</a>
+      <a href="#news">News</a>
+      <a href="#cv">CV</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <button class="nav-toggle" aria-label="Open menu" id="navToggle">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<!-- ============== HERO ============== -->
+<section class="hero" id="top">
+  <div class="hero-bg">
+    <div class="grid-overlay"></div>
+    <div class="orbit orbit-1"></div>
+    <div class="orbit orbit-2"></div>
+    <div class="orbit orbit-3"></div>
+  </div>
+  <div class="hero-inner">
+    <div class="hero-text">
+      <p class="eyebrow">Postdoctoral Researcher · POSTECH</p>
+      <h1 class="hero-title">
+        <span>Monitoring water,</span>
+        <span class="accent">from boats to satellites.</span>
+      </h1>
+      <p class="hero-sub">
+        I build integrated water and nutrient cycle monitoring techniques —
+        fusing <strong>uncrewed surface vehicles</strong>,
+        <strong>multispectral drones</strong>, and <strong>Sentinel-2</strong> remote sensing
+        with <strong>big-data analytics and explainable AI</strong> to make reservoirs
+        observable from a single waterbody to the entire country.
+      </p>
+      <div class="hero-tags">
+        <span>Reservoir Monitoring</span>
+        <span>USV · UAV · Satellite</span>
+        <span>Big-data &amp; XAI</span>
+        <span>Drought &amp; Water Quality</span>
+      </div>
+      <div class="hero-cta">
+        <a href="#research" class="btn btn-primary">View Research</a>
+        <a href="files/CV_Kwang-Hun_Lee.pdf" target="_blank" class="btn btn-ghost">Download CV ↗</a>
+      </div>
+    </div>
+    <div class="hero-portrait">
+      <div class="portrait-frame">
+        <img src="images/portrait.jpg" alt="Kwang-Hun Lee" />
+        <div class="portrait-badge">
+          <span class="dot"></span>
+          <span>Joining POSTECH ERI</span>
+        </div>
+      </div>
+    </div>
+  </div>
+  <a class="hero-scroll" href="#about" aria-label="Scroll down">↓</a>
+</section>
+
+<!-- ============== ABOUT ============== -->
+<section class="section" id="about">
+  <div class="section-head">
+    <span class="section-num">01</span>
+    <h2>About</h2>
+  </div>
+  <div class="about-grid">
+    <div class="about-text">
+      <p class="lead">
+        Hi, I'm <strong>Kwang-Hun Lee (이광훈)</strong> — an environmental engineer
+        based in Pohang, South Korea. I am completing my Ph.D. in
+        <em>Water Resources Engineering</em> at POSTECH under
+        Prof. Jonghun Kam, and will continue as a <strong>postdoctoral researcher
+        at the POSTECH Environmental Research Institute</strong> starting later this year.
+      </p>
+      <p>
+        My work sits at the intersection of <strong>field hydrology</strong>,
+        <strong>big-data analytics</strong>, and <strong>remote-sensing AI</strong>.
+        I drive uncrewed surface vehicles across Korean agricultural reservoirs,
+        fly multispectral drones above them, and reconcile that high-resolution
+        truth with Sentinel-2 satellite observations through machine-learning
+        models that are designed to be <em>explainable</em>, not just accurate.
+      </p>
+      <p>
+        At the macro scale, I use rotated PCA, hybrid ensemble ML, and XAI
+        on multi-decadal records of <strong>3,300+ agricultural reservoirs</strong> to
+        extract dominant spatiotemporal patterns of water quantity, quality,
+        and agricultural water use. At the local scale, I run a 7-year
+        high-resolution USV deployment on a single reservoir as ground truth.
+        The goal is to bridge the <em>resolution-coverage gap</em> — turning
+        scattered sensors into a coherent picture of water and nutrient cycling
+        from a single waterbody to the whole country, and ultimately, the globe.
+      </p>
+    </div>
+    <aside class="about-card">
+      <h3>At a glance</h3>
+      <dl>
+        <dt>Position</dt>
+        <dd>Postdoctoral Researcher (incoming),<br/>POSTECH Environmental Research Institute</dd>
+        <dt>Ph.D.</dt>
+        <dd>Environmental Engineering, POSTECH (2022–2026, expected)</dd>
+        <dt>M.S. / B.S.</dt>
+        <dd>Earth Sciences &amp; Environmental Engineering, GIST</dd>
+        <dt>Based in</dt>
+        <dd>Pohang, Gyeongbuk, South Korea</dd>
+        <dt>Toolbox</dt>
+        <dd>Python · R · QGIS · ML/DL · USV · UAV (multispectral) · ADCP · YSI EXO2</dd>
+      </dl>
+    </aside>
+  </div>
+</section>
+
+<!-- ============== RESEARCH ============== -->
+<section class="section section-dark" id="research">
+  <div class="section-head">
+    <span class="section-num">02</span>
+    <h2>Research</h2>
+    <p class="section-tag">A thesis built on four chapters, bridging the resolution–coverage gap.</p>
+  </div>
+
+  <div class="research-spine">
+    <p>
+      My Ph.D. thesis &mdash;
+      <em>Monitoring of Water and Nutrient Cycles in Anthropocene from Local to Global Scales</em>
+      &mdash; asks how advanced monitoring technologies can be combined to
+      characterise the coupled dynamics of water quantity and quality across spatial scales,
+      from individual reservoirs to global networks.
+      Four chapters tackle that question from complementary angles.
+    </p>
+  </div>
+
+  <!-- Chapter 1 -->
+  <article class="chapter-row">
+    <div class="chapter-media">
+      <img src="images/fig_rpca_korea_water.png" alt="Rotated PCA modes of daily water storage across Korean reservoirs" />
+      <p class="chapter-caption">Two dominant modes of daily water storage volume across 3,300+ Korean agricultural reservoirs, separating central from southern regional regimes.</p>
+    </div>
+    <div class="chapter-body">
+      <div class="chapter-tag chapter-tag-1">Chapter 1 · Macro scale</div>
+      <h3>Big-data analytics on a national reservoir network</h3>
+      <p>
+        I apply <strong>rotated PCA</strong> and time-series decomposition to multi-decadal
+        records of <strong>~3,300 agricultural reservoirs</strong> across South Korea, extracting
+        the dominant spatiotemporal modes of water storage, total organic carbon,
+        and agricultural water use. The same framework exposes how
+        <strong>adaptive rice-transplanting schedules</strong> are shifting under a warming
+        climate &mdash; revealing emerging hydroclimatic vulnerability invisible
+        in any single-station view.
+      </p>
+      <ul class="tag-list">
+        <li>Rotated PCA</li><li>Time-series clustering</li>
+        <li>National-scale hydrology</li><li>Climate adaptation</li>
+      </ul>
+      <p class="chapter-cite">
+        Lee &amp; Kam, <em>Water Research</em> (2024) ·
+        Lee, Nam &amp; Kam, <em>Agricultural Water Management</em> (in review)
+      </p>
+    </div>
+  </article>
+
+  <!-- Chapter 2 -->
+  <article class="chapter-row reverse">
+    <div class="chapter-media">
+      <img src="images/fig_usv_sensors.png" alt="USV with labelled instruments: GPS, YSI EXO2, rQPOD, PCM, ADCP" />
+      <p class="chapter-caption">Catamaran USV instrumented with YSI EXO2 multi-parameter sonde, rQPOD nitrate analyser, and ADCP for high-resolution dual monitoring of water quantity &amp; quality.</p>
+    </div>
+    <div class="chapter-body">
+      <div class="chapter-tag chapter-tag-2">Chapter 2 · Local scale</div>
+      <h3>USV high-resolution reservoir monitoring</h3>
+      <p>
+        Over <strong>five years and 100+ surveys at Daljeon reservoir</strong>,
+        I built a high-resolution dual-monitoring record &mdash; water depth, temperature,
+        DO, pH, EC, and nitrate &mdash; that resolves <em>within-reservoir spatial
+        heterogeneity</em> conventional point sampling cannot see.
+        Conventional nitrate-load estimates can overshoot by
+        <strong>+30.8 % ± 5.1 %</strong> when this heterogeneity is ignored.
+      </p>
+      <ul class="tag-list">
+        <li>USV</li><li>YSI EXO2 · rQPOD · ADCP</li>
+        <li>Bathymetry</li><li>Nitrate load</li>
+      </ul>
+      <p class="chapter-cite">
+        Lee et al., <em>Water Resources Research</em> (2023) ·
+        Lee et al., <em>ACS ES&amp;T Water</em> (in review)
+      </p>
+    </div>
+  </article>
+
+  <!-- Chapter 3 -->
+  <article class="chapter-row">
+    <div class="chapter-media">
+      <img src="images/fig_multiplatform_intro.png" alt="USV in-situ truth, UAV multispectral, and Sentinel-2 over Daljeon reservoir" />
+      <p class="chapter-caption">Three platforms &mdash; in-situ USV, UAV multispectral imagery, and Sentinel-2 &mdash; integrated for six-year reconstruction of reservoir turbidity and fDOM.</p>
+    </div>
+    <div class="chapter-body">
+      <div class="chapter-tag chapter-tag-3">Chapter 3 · Multi-platform fusion</div>
+      <h3>USV + UAV + Sentinel-2 with explainable AI</h3>
+      <p>
+        To carry local truth to satellite coverage, I bias-correct Sentinel-2
+        reflectance against <strong>UAV multispectral orthomosaics</strong> using a
+        <strong>hybrid Multi-Ensemble Machine Learning (hMEML)</strong> retrieval,
+        then predict turbidity and fDOM with tree ensembles, deep nets, and CNNs.
+        <strong>Permutation-importance XAI</strong> exposes which Sentinel-2 bands,
+        spectral indices, and meteorological drivers actually carry the signal &mdash;
+        so the model is interpretable, not just accurate.
+      </p>
+      <ul class="tag-list">
+        <li>Sentinel-2</li><li>UAV multispectral</li>
+        <li>hMEML · RF · DNN · CNN</li><li>XAI / permutation importance</li>
+      </ul>
+      <p class="chapter-cite">
+        Lee &amp; Kam, <em>Sentinel-2 reservoir fusion</em> (in prep.)
+      </p>
+    </div>
+  </article>
+
+  <!-- Chapter 4 -->
+  <article class="chapter-row reverse">
+    <div class="chapter-media">
+      <img src="images/fig_scale_integration.png" alt="Scale integration diagram: point measurement, 10-meter grid, integration platforms" />
+      <p class="chapter-caption">From point measurement, to 10&nbsp;m grid, to multi-platform integration: a roadmap toward a global inland-water observatory.</p>
+    </div>
+    <div class="chapter-body">
+      <div class="chapter-tag chapter-tag-4">Chapter 4 · Synthesis</div>
+      <h3>Toward a global inland-water observatory</h3>
+      <p>
+        The thesis closes with a discussion of how the three preceding chapters
+        chain together &mdash; local USV truth refines UAV inversions; UAV bias-corrects
+        Sentinel-2; satellites carry the result to thousands of reservoirs; the
+        nationwide rPCA framework places each reservoir in regional context.
+        The end goal: a transferable framework for next-generation
+        global water-resources management.
+      </p>
+      <ul class="tag-list">
+        <li>Cross-scale integration</li><li>SWOT &amp; Sentinel-2</li>
+        <li>Global inland water</li>
+      </ul>
+    </div>
+  </article>
+
+  <!-- Beyond-thesis: industrial XAI -->
+  <div class="side-thread">
+    <div class="side-thread-mark">+</div>
+    <div>
+      <h4>Beyond the thesis · XAI for industrial emissions</h4>
+      <p>
+        In parallel I co-author work applying explainable AI to NOx emission control
+        in solid-refuse-fuel combustion and heat-recovery steam generators
+        (<em>Journal of Cleaner Production</em>, 2024;
+        <em>Environmental Technology &amp; Innovation</em>, 2026), and hold
+        two Korean patents on AI-based pollutant management and emission prediction.
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- ============== PUBLICATIONS ============== -->
+<section class="section" id="publications">
+  <div class="section-head">
+    <span class="section-num">03</span>
+    <h2>Publications</h2>
+    <p class="section-tag">Peer-reviewed, in review, in prep, and patents.</p>
+  </div>
+
+  <div class="pub-tabs" role="tablist">
+    <button class="pub-tab active" data-tab="journal">Journals</button>
+    <button class="pub-tab" data-tab="review">In review / prep</button>
+    <button class="pub-tab" data-tab="patent">Patents</button>
+  </div>
+
+  <ol class="pub-list" id="pub-journal">
+    <li>
+      <span class="pub-year">2024</span>
+      <div class="pub-body">
+        <p class="pub-title"><strong>Lee, K. H.</strong>, &amp; Kam, J.
+          Spatiotemporal patterns of water volume and total organic carbon
+          concentration of agricultural reservoirs over South Korea.</p>
+        <p class="pub-venue"><em>Water Research</em>, 121610.</p>
+        <a class="pub-link" href="https://doi.org/10.1016/j.watres.2024.121610" target="_blank" rel="noopener">DOI ↗</a>
+      </div>
+    </li>
+    <li>
+      <span class="pub-year">2023</span>
+      <div class="pub-body">
+        <p class="pub-title"><strong>Lee, K.-H.</strong>, Ali, S., Kim, Y., Lee, K., Kwon, S. Y., &amp; Kam, J.
+          High resolution mapping of nitrate loads of a reservoir using an uncrewed surface vehicle:
+          Potential opportunities and challenges.</p>
+        <p class="pub-venue"><em>Water Resources Research</em>, 59, e2023WR034665.</p>
+        <a class="pub-link" href="https://doi.org/10.1029/2023WR034665" target="_blank" rel="noopener">DOI ↗</a>
+      </div>
+    </li>
+    <li>
+      <span class="pub-year">2024</span>
+      <div class="pub-body">
+        <p class="pub-title">Choi, S., <strong>Lee, K.-H.</strong>, Park, J.-H., Jeon, S., Lee, H. J., Kang, P.-G., &amp; Kam, J.
+          Reliable AI models can reveal key processes of heat recovery steam generator operation in air pollutant emission.</p>
+        <p class="pub-venue"><em>Journal of Cleaner Production</em>, 140806.</p>
+        <a class="pub-link" href="https://doi.org/10.1016/j.jclepro.2024.140806" target="_blank" rel="noopener">DOI ↗</a>
+      </div>
+    </li>
+    <li>
+      <span class="pub-year">2026</span>
+      <div class="pub-body">
+        <p class="pub-title">Choi, S., <strong>Lee, K.-H.</strong>, Lee, H. J., Park, J.-H., Kang, P.-G., &amp; Kam, J.
+          Explainable AI-based optimization of facility operations for excessive NOx emission control:
+          A case study of a solid refuse fuel combustion facility.</p>
+        <p class="pub-venue"><em>Environmental Technology &amp; Innovation</em>, 42, 104875.</p>
+        <a class="pub-link" href="https://doi.org/10.1016/j.eti.2026.104875" target="_blank" rel="noopener">DOI ↗</a>
+      </div>
+    </li>
+    <li>
+      <span class="pub-year">2020</span>
+      <div class="pub-body">
+        <p class="pub-title">Kang, H. Y., Kim, C. S., Kim, D. Y., Lee, Y. J., Park, H. J., Kundu, G. K.,
+          Kim, Y. K., Bibi, R., Jang, J. B., <strong>Lee, K. H.</strong>, Kim, H. W., Yun, S. G., Kim, H. Y., &amp; Kang, C. K.
+          Identifying patterns in the multitrophic community and food-web structure of a low-turbidity temperate estuarine bay.</p>
+        <p class="pub-venue"><em>Scientific Reports</em>, 10(1), 1–16.</p>
+      </div>
+    </li>
+  </ol>
+
+  <ol class="pub-list hidden" id="pub-review">
+    <li>
+      <span class="pub-year">In&nbsp;review</span>
+      <div class="pub-body">
+        <p class="pub-title"><strong>Lee, K. H.</strong>, Nam, W.-H., &amp; Kam, J.
+          Adaptive rice transplanting schedules and reservoir use reveal emerging climate vulnerability in South Korea.</p>
+        <p class="pub-venue"><em>Agricultural Water Management</em>.</p>
+      </div>
+    </li>
+    <li>
+      <span class="pub-year">In&nbsp;review</span>
+      <div class="pub-body">
+        <p class="pub-title"><strong>Lee, K. H.</strong>, Han, S., Oh, H., &amp; Kam, J.
+          High-resolution reservoir monitoring using uncrewed surface vehicles:
+          Spatiotemporal dynamics of nitrate loads and drought impacts.</p>
+        <p class="pub-venue"><em>ACS ES&amp;T Water</em>.</p>
+      </div>
+    </li>
+    <li>
+      <span class="pub-year">In&nbsp;prep</span>
+      <div class="pub-body">
+        <p class="pub-title"><strong>Lee, K. H.</strong> &amp; Kam, J. — Sentinel-2 / USV / UAV integrated reservoir turbidity monitoring.</p>
+      </div>
+    </li>
+  </ol>
+
+  <ol class="pub-list hidden" id="pub-patent">
+    <li>
+      <span class="pub-year">2026</span>
+      <div class="pub-body">
+        <p class="pub-title">Pollutant Management System and Method (오염물질 관리 시스템 및 방법).</p>
+        <p class="pub-venue">Republic of Korea, Patent Application No. 10-2024-0058479.</p>
+      </div>
+    </li>
+    <li>
+      <span class="pub-year">2023</span>
+      <div class="pub-body">
+        <p class="pub-title">Pollutant Emission Concentration Prediction System and Method
+          (오염물질 배출 수준 산정 시스템 및 방법).</p>
+        <p class="pub-venue">Republic of Korea, Patent Application No. 10-2023-0021417.</p>
+      </div>
+    </li>
+  </ol>
+</section>
+
+<!-- ============== NEWS ============== -->
+<section class="section section-soft" id="news">
+  <div class="section-head">
+    <span class="section-num">04</span>
+    <h2>News &amp; Highlights</h2>
+  </div>
+  <ul class="news-list">
+    <li>
+      <span class="news-date">2026</span>
+      <p><strong>Postdoctoral position</strong> at the POSTECH Environmental Research Institute — starting later this year.</p>
+    </li>
+    <li>
+      <span class="news-date">2026</span>
+      <p>New patent filed: <em>Pollutant Management System and Method</em> (KR 10-2024-0058479).</p>
+    </li>
+    <li>
+      <span class="news-date">2025</span>
+      <p>Selected for POSTECH's <strong>Next-generation Convergence Research Pioneering Program</strong> (₩20M, one-year university-level grant).</p>
+    </li>
+    <li>
+      <span class="news-date">2024</span>
+      <p>Lead-author paper accepted in <em>Water Research</em> — agricultural reservoirs &amp; total organic carbon across South Korea.</p>
+    </li>
+    <li>
+      <span class="news-date">2024</span>
+      <p><strong>Outstanding Paper Award</strong>, 2023 Korean Society of Environmental Engineering Annual Meeting.</p>
+    </li>
+    <li>
+      <span class="news-date">2023</span>
+      <p>First-author paper in <em>Water Resources Research</em> on USV-based reservoir nitrate mapping.</p>
+    </li>
+  </ul>
+</section>
+
+<!-- ============== CV ============== -->
+<section class="section" id="cv">
+  <div class="section-head">
+    <span class="section-num">05</span>
+    <h2>Curriculum Vitae</h2>
+  </div>
+  <div class="cv-card">
+    <div>
+      <h3>Full CV (PDF)</h3>
+      <p>Education, publications, awards, patents, and technical skills — updated May 2026.</p>
+    </div>
+    <a href="files/CV_Kwang-Hun_Lee.pdf" target="_blank" class="btn btn-primary">Download CV ↓</a>
+  </div>
+</section>
+
+<!-- ============== CONTACT ============== -->
+<section class="section section-dark" id="contact">
+  <div class="section-head">
+    <span class="section-num">06</span>
+    <h2>Get in touch</h2>
+    <p class="section-tag">Always open to collaborations on reservoir monitoring, remote sensing, and water-quality AI.</p>
+  </div>
+  <div class="contact-grid">
+    <a href="mailto:lkh322@postech.ac.kr" class="contact-card">
+      <span class="contact-label">Email</span>
+      <span class="contact-value">lkh322@postech.ac.kr</span>
+    </a>
+    <div class="contact-card">
+      <span class="contact-label">Office</span>
+      <span class="contact-value">POSTECH · 77 Cheongam-Ro,<br/>Nam-gu, Pohang, Gyeongbuk 37673, Korea</span>
+    </div>
+    <div class="contact-card">
+      <span class="contact-label">Phone</span>
+      <span class="contact-value">+82-10-5547-4682</span>
+    </div>
+    <div class="contact-card">
+      <span class="contact-label">Advisor</span>
+      <span class="contact-value">Prof. Jonghun Kam (POSTECH)</span>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div>
+    <p>© <span id="year"></span> Kwang-Hun Lee · Pohang, South Korea</p>
+    <p class="footer-sub">Built with care · Last updated June 2026</p>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

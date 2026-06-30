@@ -1,0 +1,8 @@
+.DS_Store
+.vscode/
+.idea/
+*.swp
+node_modules/
+.env
+.env.local
+Thumbs.db
