@@ -11,6 +11,32 @@ Personal academic website of **Kwang-Hun Lee** — Ph.D. candidate (incoming pos
 - USV + UAV + Sentinel-2 multi-platform fusion with explainable AI
 - Toward a global inland-water observatory
 
+
+## Drought monitor
+
+Daily **scEDI** (spatially continuous Effective Drought Index) maps for South Korea:
+
+- Live page: https://kwang-hunlee.github.io/drought/
+- Source: `drought/index.html` + `drought/drought.js`
+- Published figures live under `drought/data/<YYYY-MM-DD>/`
+- Catalog: `drought/data/index.json` (newest dates first)
+
+### Publish a new day
+
+```bash
+python drought/scripts/publish_day.py 2026-09-03
+# or point at an export folder:
+python drought/scripts/publish_day.py 2026-09-03 /path/to/exports
+```
+
+Expected PNGs:
+
+- `scEDI_PREC_VDD_AWRI_2x2_<date>.png`
+- `scEDI_contour_DEM_<date>.png`
+- `Province_scEDI_map_<date>.png` (optional)
+
+Then commit the updated `drought/data/` files and push.
+
 ## Stack
 
 Plain HTML / CSS / JS — no framework, no build step.

@@ -1,0 +1,138 @@
+/* Drought monitor — gallery extras only; inherit palette from ../style.css */
+
+.nav-links a.active{
+  color:var(--accent);
+  background:rgba(29,138,166,.10);
+}
+
+.drought-page{
+  padding-top:88px;
+}
+
+.drought-hero{
+  padding:56px 28px 40px;
+  background:radial-gradient(ellipse at top right, #e8f4f8 0%, var(--bg) 55%);
+  border-bottom:1px solid var(--line);
+}
+.drought-hero-inner{
+  max-width:var(--max);
+  margin:0 auto;
+}
+.drought-hero .eyebrow{
+  display:inline-block;
+  font-size:13px; font-weight:600; letter-spacing:.04em;
+  text-transform:uppercase; color:var(--accent);
+  margin:0 0 12px;
+}
+.drought-hero h1{
+  margin:0 0 16px;
+  font-size:clamp(28px, 4vw, 42px);
+  line-height:1.15;
+  letter-spacing:-.02em;
+}
+.drought-hero h1 .accent{ color:var(--accent); }
+.drought-blurb{
+  max-width:720px;
+  color:var(--ink-soft);
+  font-size:16px;
+  margin:0 0 8px;
+}
+.drought-blurb strong{ color:var(--ink); }
+
+.drought-controls{
+  max-width:var(--max);
+  margin:0 auto;
+  padding:28px 28px 8px;
+  display:flex;
+  flex-wrap:wrap;
+  gap:16px;
+  align-items:flex-end;
+}
+.control-field{ display:flex; flex-direction:column; gap:6px; }
+.control-field label{
+  font-size:12px; font-weight:600; letter-spacing:.04em;
+  text-transform:uppercase; color:var(--muted);
+}
+.control-field select{
+  appearance:none;
+  min-width:180px;
+  padding:10px 36px 10px 14px;
+  border:1px solid var(--line);
+  border-radius:var(--radius-sm);
+  background:var(--card) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'%3E%3Cpath fill='%236e7b8e' d='M1 1l5 5 5-5'/%3E%3C/svg%3E") no-repeat right 12px center;
+  font:inherit; font-size:15px; color:var(--ink);
+  box-shadow:var(--shadow);
+}
+.control-field select:focus{
+  outline:2px solid rgba(29,138,166,.35);
+  outline-offset:2px;
+}
+.status-pill{
+  font-size:13px; color:var(--muted);
+  padding:10px 0;
+}
+.status-pill.error{ color:#b42318; }
+
+.drought-galleries{
+  max-width:var(--max);
+  margin:0 auto;
+  padding:16px 28px 72px;
+  display:flex;
+  flex-direction:column;
+  gap:28px;
+}
+
+.gallery-card{
+  background:var(--card);
+  border:1px solid var(--line);
+  border-radius:var(--radius);
+  box-shadow:var(--shadow);
+  overflow:hidden;
+}
+.gallery-card.hidden{ display:none; }
+.gallery-head{
+  display:flex; justify-content:space-between; align-items:baseline;
+  gap:12px; flex-wrap:wrap;
+  padding:18px 22px 12px;
+  border-bottom:1px solid var(--line);
+}
+.gallery-head h2{
+  margin:0; font-size:18px; letter-spacing:-.01em;
+}
+.gallery-head .meta{
+  font-size:13px; color:var(--muted);
+  font-family:'JetBrains Mono', ui-monospace, monospace;
+}
+.gallery-body{
+  padding:16px;
+  background:linear-gradient(180deg, #fbfcfd 0%, var(--card) 100%);
+}
+.gallery-body img{
+  width:100%;
+  height:auto;
+  border-radius:12px;
+  border:1px solid var(--line);
+  background:#fff;
+}
+.gallery-empty{
+  padding:40px 22px;
+  text-align:center;
+  color:var(--muted);
+  font-size:14px;
+}
+
+.drought-footnote{
+  max-width:var(--max);
+  margin:0 auto;
+  padding:0 28px 80px;
+  color:var(--muted);
+  font-size:13px;
+}
+
+@media (max-width:640px){
+  .drought-hero{ padding:40px 20px 28px; }
+  .drought-controls, .drought-galleries, .drought-footnote{ padding-left:20px; padding-right:20px; }
+  .gallery-body{ padding:10px; }
+}
+
+.hidden{ display:none !important; }

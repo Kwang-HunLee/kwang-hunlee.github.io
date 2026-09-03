@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Korea Daily scEDI Drought Monitor · Kwang-Hun Lee</title>
+<meta name="description" content="Daily South Korea scEDI drought maps — PREC/VDD/AWRI panels, DEM contours, and province-level summaries." />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="../style.css" />
+<link rel="stylesheet" href="drought.css" />
+</head>
+<body>
+
+<header class="nav" id="nav">
+  <div class="nav-inner">
+    <a href="../" class="brand">
+      <span class="brand-mark">KHL</span>
+      <span class="brand-name">Kwang-Hun Lee</span>
+    </a>
+    <nav class="nav-links">
+      <a href="../#about">About</a>
+      <a href="../#research">Research</a>
+      <a href="../#publications">Publications</a>
+      <a href="../#honors">Awards</a>
+      <a href="../#news">News</a>
+      <a href="../#cv">CV</a>
+      <a href="./" class="active">Drought</a>
+      <a href="../#contact">Contact</a>
+    </nav>
+    <button class="nav-toggle" aria-label="Open menu" id="navToggle">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<main class="drought-page">
+  <section class="drought-hero">
+    <div class="drought-hero-inner">
+      <p class="eyebrow">Open data · Daily update</p>
+      <h1>Korea Daily <span class="accent">scEDI</span> Drought Monitor</h1>
+      <p class="drought-blurb">
+        Daily drought maps for South Korea based on the
+        <strong>spatially continuous Effective Drought Index (scEDI)</strong>.
+        Station precipitation is converted to scEDI, then rendered as
+        PREC / VDD / AWRI summary panels, DEM-backed contour maps, and
+        optional province-level choropleths.
+      </p>
+      <p class="drought-blurb">
+        Select a date below to load the published figure set for that day.
+        New days can be added with <code>drought/scripts/publish_day.py</code>.
+      </p>
+    </div>
+  </section>
+
+  <div class="drought-controls">
+    <div class="control-field">
+      <label for="dateSelect">Map date</label>
+      <select id="dateSelect" aria-label="Select drought map date"></select>
+    </div>
+    <p class="status-pill" id="status" aria-live="polite">Loading…</p>
+  </div>
+
+  <div class="drought-galleries">
+    <article class="gallery-card" id="card-2x2">
+      <div class="gallery-head">
+        <h2>scEDI · PREC / VDD / AWRI (2×2)</h2>
+        <span class="meta" id="meta-2x2">—</span>
+      </div>
+      <div class="gallery-body">
+        <img id="img-2x2" alt="scEDI PREC VDD AWRI 2x2 panel" />
+      </div>
+    </article>
+
+    <article class="gallery-card" id="card-contour">
+      <div class="gallery-head">
+        <h2>scEDI contour on DEM</h2>
+        <span class="meta" id="meta-contour">—</span>
+      </div>
+      <div class="gallery-body">
+        <img id="img-contour" alt="scEDI contour map on DEM" />
+      </div>
+    </article>
+
+    <article class="gallery-card" id="card-province">
+      <div class="gallery-head">
+        <h2>Province scEDI map</h2>
+        <span class="meta" id="meta-province">—</span>
+      </div>
+      <div class="gallery-body">
+        <img id="img-province" alt="Province-level scEDI map" />
+      </div>
+    </article>
+  </div>
+
+  <p class="drought-footnote">
+    Figures are static PNG exports from the Korea scEDI analysis pipeline.
+    Filenames follow <code>scEDI_*_&lt;YYYY-MM-DD&gt;.png</code> and
+    <code>Province_scEDI_map_&lt;YYYY-MM-DD&gt;.png</code>.
+  </p>
+</main>
+
+<footer class="footer">
+  <div>
+    <p>© <span id="year"></span> Kwang-Hun Lee · Pohang, South Korea</p>
+    <p class="footer-sub">scEDI Drought Monitor · Part of kwang-hunlee.github.io</p>
+  </div>
+</footer>
+
+<script src="../script.js"></script>
+<script src="drought.js"></script>
+</body>
+</html>
