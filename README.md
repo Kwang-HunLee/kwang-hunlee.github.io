@@ -1,6 +1,6 @@
 # kwang-hunlee.github.io
 
-Personal academic website of **Kwang-Hun Lee** — Ph.D. candidate (incoming postdoctoral researcher) at POSTECH Environmental Research Institute.
+Personal academic website of **Kwang-Hun Lee** — postdoctoral researcher at the POSTECH Environmental Research Institute (Ph.D., POSTECH, Aug 2026).
 
 🌐 Live site: https://kwang-hunlee.github.io
 
