@@ -1,6 +1,14 @@
 {
   "dates": [
     {
+      "date": "2026-09-04",
+      "files": {
+        "scEDI_PREC_VDD_AWRI_2x2": true,
+        "scEDI_contour_DEM": true,
+        "Province_scEDI_map": true
+      }
+    },
+    {
       "date": "2026-09-03",
       "files": {
         "scEDI_PREC_VDD_AWRI_2x2": true,

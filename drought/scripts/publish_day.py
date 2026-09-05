@@ -33,14 +33,8 @@ OPTIONAL = [
     ("Province_scEDI_map", "Province_scEDI_map_{date}.png"),
 ]
 
-DEFAULT_SIG = Path(
-    "/Users/khlee/Library/CloudStorage/Dropbox/IN_POSTECH/2026/"
-    "2026-SouthKorea_scEDI Analysis/Korea scEDI/SIG"
-)
-DEFAULT_ROOT = Path(
-    "/Users/khlee/Library/CloudStorage/Dropbox/IN_POSTECH/2026/"
-    "2026-SouthKorea_scEDI Analysis/Korea scEDI"
-)
+DEFAULT_SIG = Path("/workspace/korea-scedi/SIG")
+DEFAULT_ROOT = Path("/workspace/korea-scedi")
 
 
 def repo_drought_dir() -> Path:
