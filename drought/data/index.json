@@ -296,5 +296,6 @@
         "Province_scEDI_map": true
       }
     }
-  ]
+  ],
+  "cache_bust": "20260907-hangul-fix"
 }

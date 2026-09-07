@@ -90,7 +90,8 @@
       const meta = document.getElementById(metaId);
       const available = !!files[key];
       const filename = `${prefix}${date}.png`;
-      const src = `data/${date}/${filename}`;
+      const bust = (catalog.cache_bust || entry.rev || date);
+      const src = `data/${date}/${filename}?v=${encodeURIComponent(bust)}`;
       if (available) {
         showImage(card, img, meta, src, filename);
       } else if (optional) {
