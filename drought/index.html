@@ -4,7 +4,7 @@
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <title>Korea Daily scEDI Drought Monitor · Kwang-Hun Lee</title>
-<meta name="description" content="Daily South Korea scEDI drought maps — PREC/VDD/AWRI panels, DEM contours, and province-level summaries." />
+<meta name="description" content="Daily South Korea drought maps from the self-calibrating Effective Drought Index (scEDI) — PREC/VDD/AWRI panels, DEM contours, and province-level summaries." />
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet" />
@@ -42,14 +42,15 @@
       <h1>Korea Daily <span class="accent">scEDI</span> Drought Monitor</h1>
       <p class="drought-blurb">
         Daily drought maps for South Korea based on the
-        <strong>spatially continuous Effective Drought Index (scEDI)</strong>.
-        Station precipitation is converted to scEDI, then rendered as
-        PREC / VDD / AWRI summary panels, DEM-backed contour maps, and
-        optional province-level choropleths.
+        <strong>self-calibrating Effective Drought Index (scEDI)</strong>
+        (Park et al., 2022). Unlike the original EDI, scEDI uses a rolling
+        30-year window for effective-precipitation climatology so drought
+        intensity stays comparable across wet and dry decades.
       </p>
       <p class="drought-blurb">
-        Select a date below to load the published figure set for that day.
-        New days can be added with <code>drought/scripts/publish_day.py</code>.
+        KMA ASOS station precipitation is converted to scEDI and mapped as
+        PREC / VDD / AWRI summary panels, DEM-backed contour maps, and
+        province-level choropleths. Pick a date below to load that day’s figures.
       </p>
     </div>
   </section>
