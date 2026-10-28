@@ -491,11 +491,31 @@ button{ font-family:inherit; cursor:pointer; }
 .pub-tab.active{
   background:var(--ink); color:#fff; border-color:var(--ink);
 }
+.pub-panel.hidden,
+.pub-list.hidden{ display:none; }
+.pub-group + .pub-group{ margin-top:46px; }
+.pub-group-title{
+  display:flex; align-items:center; gap:12px;
+  margin:0 0 16px;
+  font-size:13px; font-weight:700;
+  letter-spacing:.14em; text-transform:uppercase;
+  color:var(--ink-soft);
+}
+.pub-group-title::after{
+  content:"";
+  flex:1; height:1px;
+  background:var(--line);
+}
+.pub-count{
+  font-family:'JetBrains Mono', ui-monospace, monospace;
+  font-size:12px; font-weight:600;
+  letter-spacing:0; text-transform:none;
+  color:var(--accent);
+}
 .pub-list{
   list-style:none; padding:0; margin:0;
   display:flex; flex-direction:column; gap:18px;
 }
-.pub-list.hidden{ display:none; }
 .pub-list li{
   display:grid; grid-template-columns:80px 1fr; gap:24px;
   padding:24px 26px;
